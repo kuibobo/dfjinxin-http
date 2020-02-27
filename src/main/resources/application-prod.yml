@@ -1,0 +1,7 @@
+metadata:
+  db:
+    ip: 10.217.17.115
+    port: 3306
+    name: cleanse_db
+    user: root
+    password: Grand_p0ss
