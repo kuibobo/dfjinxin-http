@@ -1,4 +1,4 @@
-package dfjinxin.demo.util;
+package dfjinxin.transf.util;
 
 import java.io.Serializable;
 import java.util.List;

@@ -1,7 +1,7 @@
-package dfjinxin.demo.service.impl;
+package dfjinxin.transf.service.impl;
 
-import dfjinxin.demo.service.MetaDataService;
-import dfjinxin.demo.util.PageUtils;
+import dfjinxin.transf.service.MetaDataService;
+import dfjinxin.transf.util.PageUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;

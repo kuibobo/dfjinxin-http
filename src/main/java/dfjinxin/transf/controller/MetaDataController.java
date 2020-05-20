@@ -1,7 +1,7 @@
-package dfjinxin.demo.controller;
+package dfjinxin.transf.controller;
 
-import dfjinxin.demo.service.MetaDataService;
-import dfjinxin.demo.util.R;
+import dfjinxin.transf.service.MetaDataService;
+import dfjinxin.transf.util.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
