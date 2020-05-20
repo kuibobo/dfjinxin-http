@@ -1,10 +1,10 @@
-package dfjinxin.transf.test;
+package dfjinxin.transf;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DfjinxinTransfApplicationTests {
+class ApplicationTests {
 
     @Test
     void contextLoads() {

@@ -1,6 +1,7 @@
 package dfjinxin.transf.controller;
 
 import cn.hutool.http.HttpUtil;
+import com.alibaba.fastjson.JSON;
 import org.springframework.web.bind.annotation.*;
 import dfjinxin.transf.util.R;
 import com.alibaba.fastjson.JSONObject;
@@ -14,7 +15,13 @@ public class ProxyController {
     @GetMapping("/get")
     public R get(@RequestParam("url") String url) {
         String content = HttpUtil.get(url);
-        JSONObject json = JSONObject.parseObject(content);
+        JSON json = null;
+
+        try {
+            json = JSONObject.parseObject(content);
+        } catch (Exception ex) {
+            json = JSONObject.parseArray(content);
+        }
         return R.ok().put("data", json);
     }
 
@@ -24,7 +31,13 @@ public class ProxyController {
         params.remove("url");
 
         String content = HttpUtil.post(url, params);
-        JSONObject json = JSONObject.parseObject(content);
+        JSON json = null;
+
+        try {
+            json = JSONObject.parseObject(content);
+        } catch (Exception ex) {
+            json = JSONObject.parseArray(content);
+        }
         return R.ok().put("data", json);
     }
 }
