@@ -10,9 +10,9 @@
     </parent>
     <packaging>war</packaging>
     <groupId>dfjinxin</groupId>
-    <artifactId>dfjinxin-demo</artifactId>
+    <artifactId>dfjinxin-transf</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>dfjinxin-demo</name>
+    <name>dfjinxin-transf</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
